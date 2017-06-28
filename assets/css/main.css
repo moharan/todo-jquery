@@ -1,21 +1,2 @@
-body {
-	background-image: url(../img/bunny_garden.jpg);
-	padding: 3% 0;
-	color: whitesmoke;
-}
 
-header, section {
-	padding: 4% 0;
-	background-color: rgba( 187, 212, 208, 0.8);
-}
-button {
-	background-color: rgb(150, 208, 212);
-	color: black;
-}
-label, span, p {
-	color: black;
-}
-span {
-	display: block;
-}
 
