@@ -1,13 +1,12 @@
 body {
-	background-color: #ccc;
+	background-color: smokewhite;
 	color: #666;
 	margin: 0 auto;
 	padding: 0 auto;
 }
 #principal {
 	width: 100%;
-	padding: auto 25px;
-	background-color: #000;
+	background-color: #20B2AA;
 	color: #fff;
 }
 
