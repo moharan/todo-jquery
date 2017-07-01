@@ -10,7 +10,7 @@ $(document).ready(function() {
                   if (value == "") {
                         alert("Debes escribir una tarea");
                   } else {
-       		      $("#tareas").append("<div class='nuevo'><input type='checkbox' id='test-" + contador + "' /><label for='test-" + contador + "'>" + value + "</label><div class='right-align'><a id='remove' class='waves-effect waves-light btn deep-purple'>remove</a></div></div>");
+       		      $("#tareas").append("<div class='nuevo'><input type='checkbox' id='test-" + contador + "' /><label for='test-" + contador + "'>" + value + "&nbsp;"+ "</label><a id='remove' class='btn-floating btn-large waves-effect waves-light deep-purple'><i class='material-icons'>thumb_down</i></a></div>");
        		      // tareas borradas
                         $("a").click(function(){
                         $(this).parent().remove();
@@ -20,6 +20,8 @@ $(document).ready(function() {
                         // tareas completas
                         $("#test-" + contador).click(function(){
                         $("#completadas").append($(this).parent());
+                        // al estar completar desabilitar input
+                        $(this).attr("disabled", "disabled");
                         });
                         // marcar contador
                         contador++;
